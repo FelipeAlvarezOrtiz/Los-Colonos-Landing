@@ -9,7 +9,7 @@ import ZanahoriaIcon from "../../../../assets/images/ZanahoriaIcon.png"
 import EspinacaIcon from "../../../../assets/images/EspinacaIcon.webp"
 import BrocoliIcon from "../../../../assets/images/BrocoloIcon.webp"
 import ChocloIcon from "../../../../assets/images/ChocloIcon.webp"
-import LogoWalmart from "../../../../assets/Logo_Walmart.png"
+import LogoLider from "../../../../assets/Logo_Lider.png"
 import "./SectionProducts.scss"
 
 
@@ -77,7 +77,7 @@ const SectionProducts: React.FC = () => {
 						<div className="section-products__find-us">
 							<h2>Nos encuentras en</h2>
 							<div className="section-products__find-us--logos">
-								<img src={LogoWalmart} alt="Logo Walmart"/>
+								<img src={LogoLider} alt="Logo Walmart"/>
 							</div>
             </div>
 
