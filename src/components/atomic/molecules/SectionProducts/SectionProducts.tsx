@@ -9,6 +9,7 @@ import ZanahoriaIcon from "../../../../assets/images/ZanahoriaIcon.png"
 import EspinacaIcon from "../../../../assets/images/EspinacaIcon.webp"
 import BrocoliIcon from "../../../../assets/images/BrocoloIcon.webp"
 import ChocloIcon from "../../../../assets/images/ChocloIcon.webp"
+import LogoWalmart from "../../../../assets/Logo_Walmart.png"
 import "./SectionProducts.scss"
 
 
@@ -61,18 +62,25 @@ const SectionProducts: React.FC = () => {
                 </div>
             </div>
             <div className="section-products__content">
-                <h2 className="section-products__content--title">Nuestros Productos</h2>
-                <div className="section-products__list-images">
-                    {listIcons.map(icon => (
-                        <div key={icon.label} className="section-products__image--container">
-                            <img src={icon.icon} alt={`${icon.label}-img`} className="section-products__image"/>
-                            <p>{icon.label}</p>
-                        </div>
-                    ))}
-                    <p>...alcachofa, betarraga y más</p>
-                </div>
-
+							<h2 className="section-products__content--title">Nuestros Productos</h2>
+							<div className="section-products__list-images">
+									{listIcons.map(icon => (
+											<div key={icon.label} className="section-products__image--container">
+													<img src={icon.icon} alt={`${icon.label}-img`} className="section-products__image"/>
+													<p>{icon.label}</p>
+											</div>
+									))}
+									<p>...alcachofa, betarraga y más</p>
+							</div>
             </div>
+
+						<div className="section-products__find-us">
+							<h2>Nos encuentras en</h2>
+							<div className="section-products__find-us--logos">
+								<img src={LogoWalmart} alt="Logo Walmart"/>
+							</div>
+            </div>
+
             <div className="section-products__footer">
                 <span>Agricola Los Colonos:</span>
                 <p>Innovación y tradición en Cada Cosecha</p>
