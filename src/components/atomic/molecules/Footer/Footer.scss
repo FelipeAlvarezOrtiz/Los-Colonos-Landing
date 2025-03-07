@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+	@media (max-width: 720px) {
+		display: block;
+		justify-content: center;
+	}
 
   &__rrss{
     padding-bottom: 5rem;
@@ -37,6 +41,11 @@
     height: 200px;
     width: 200px;
     padding-bottom: 5rem;
+		@media (max-width: 720px) {
+			display: flex;
+			justify-self: center;
+			padding-bottom: 0;
+		}
   }
 
 }

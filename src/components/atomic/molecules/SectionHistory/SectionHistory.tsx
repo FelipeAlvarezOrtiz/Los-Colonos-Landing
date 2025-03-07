@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import OrnamentoLeft from "../../../../assets/Ornamento1.webp";
 import OrnamentoRight from "../../../../assets/Ornamento2.webp";
 
@@ -6,6 +6,8 @@ import "./SectionHistory.scss";
 import HeaderSection from "../../atoms/HeaderSection";
 
 const SectionHistory: React.FC = () => {
+	const [width, setWidth] = useState(window.innerWidth)
+
   return (
     <div className="section-history">
       <div className="container-header">
@@ -19,9 +21,9 @@ const SectionHistory: React.FC = () => {
           <HeaderSection backgroundColor="#519551" />
         </div>
         <div className="container-header__content">
-          <img src={OrnamentoLeft} alt="Ornamento Izquierdo" />
+					{width > 720 ? <img src={OrnamentoLeft} alt="Ornamento Izquierdo" /> : ''}
           <h1>Nuestra Historia</h1>
-          <img src={OrnamentoRight} alt="Ornamento Derecho" />
+          {width > 720 ? <img src={OrnamentoRight} alt="Ornamento Derecho" /> : ''}
         </div>
       </div>
       <div className="section-history__container-description">

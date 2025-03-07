@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="home-page">
-        <Navbar />
+        {/* <Navbar /> */}
         <Element name="Inicio" className="hero-carousel__container">
         <Carousel sliders={[Slider1, Slider2, Slider3, Slider4]} />
         </Element>
